@@ -1,4 +1,4 @@
-HIVE_VER=1.2.1
+HIVE_VER=1.2.2
 export HIVE_VER
 
 HIVE_PREFIX=/hive/apache-hive-$HIVE_VER-bin
