@@ -11,7 +11,7 @@ echo "using HADOOP_VER=$HADOOP_VER"
 sudo mkdir /hadoop && sudo chmod 777 /hadoop
 sudo mkdir /data && sudo chmod 777 /data
 
-curl -s -L https://archive.apache.org/dist/hadoop/common/hadoop-${HADOOP_VER}/hadoop-${HADOOP_VER}.tar.gz | tar -C /hadoop -x -z -f -
+wget -qO- https://archive.apache.org/dist/hadoop/common/hadoop-${HADOOP_VER}/hadoop-${HADOOP_VER}.tar.gz | tar -C /hadoop -x -z -f -
 
 # configure
 cp $DIR/standalone/* /hadoop/hadoop-${HADOOP_VER}/etc/hadoop/

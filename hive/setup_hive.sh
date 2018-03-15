@@ -12,7 +12,7 @@ echo "using HIVE_VER=$HIVE_VER"
 sudo mkdir /hive && sudo chmod 777 /hive
 mkdir /hive/warehouse
 
-curl -s -L http://www-us.apache.org/dist/hive/hive-${HIVE_VER}/apache-hive-${HIVE_VER}-bin.tar.gz | tar -C /hive -x -z -f -
+wget -qO- http://www-us.apache.org/dist/hive/hive-${HIVE_VER}/apache-hive-${HIVE_VER}-bin.tar.gz | tar -C /hive -x -z -f -
 
 # configure
 cp $DIR/standalone/* ${HIVE_PREFIX}/conf/
